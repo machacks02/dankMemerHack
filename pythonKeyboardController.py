@@ -5,6 +5,7 @@ import os
 
 import time
 import re
+import random
 
 flag = True
 counter = 0
@@ -31,7 +32,7 @@ def begLoop():
     while flag:
         send("pls beg")
         send("pls dep all")
-        time.sleep(45.5)
+        time.sleep(random.randint(46, 50))
 def searchLoop(counter, first, last):
     time.sleep(5)
     while flag:
@@ -53,7 +54,7 @@ def searchLoop(counter, first, last):
         if first != 0 or last != 0:
             text = message[int(first)+1: int(last)]
             send(text)
-        time.sleep(30)
+        time.sleep(random.randint(29, 33))
         counter = 0
 
 
