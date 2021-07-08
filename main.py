@@ -1,5 +1,4 @@
 from discord.ext import commands
-from discord import utils
 import json
 
 load = json.load(open('config.json'))
