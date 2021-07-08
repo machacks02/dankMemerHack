@@ -27,7 +27,7 @@ This hacks the dank memes bot on discord! check out my [YouTube channel](https:/
 
 - Go back to the discord developer website you were at earlier and go to 'General Information', right above 'OAuth2'. Here see where it says your 'Client secret', click reveal and then copy it.
 
-- Go to the file called 'main.py', open it, and where it says 'PUT YOUR CLIENT SECRET HERE' and replace it with the text you copied earlier, but make sure to surround it with quotation marks like these: ''
+- Go to the file called `config.json`, open it, and where it says `"PUT YOUR APPLICATIONS TOKEN INSIDE THE QUOTATION MARKS"`, replace it with the text you copied earlier, but make sure to surround it with quotation marks like these: `""`
 
 **And now your done!**
 
