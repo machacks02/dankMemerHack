@@ -10,9 +10,6 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    message_content = message.clean_content
-    message_content = utils.remove_markdown(message_content)
-
     file = open('messages.txt', 'a')
     file.write(f'{message.author.name}: {message.content}\n')
 
