@@ -25,10 +25,10 @@ This hacks the dank memes bot on discord! check out my [YouTube channel](https:/
 
 ## Step 4:
 
-- Go back to the discord developer website you were at earlier and go to 'General Information', right above 'OAuth2'. Here see where it says your 'Client secret', click reveal and then copy it.
+- Go back to the discord developer website you were at earlier and go to 'Bot', right below 'OAuth2'. Here see where it says your 'Bot token', click reveal and then copy it.
 
-- Go to the file called `config.json`, open it, and where it says `"PUT YOUR APPLICATIONS TOKEN INSIDE THE QUOTATION MARKS"`, replace it with the text you copied earlier, but make sure to surround it with quotation marks like these: `""`
+- Go to the file called `config.json`, open it, and where it says `"PUT YOUR BOT TOKEN INSIDE THE QUOTATION MARKS"`, replace it with the text you copied earlier, but make sure to surround it with quotation marks like these: `""`
 
-**And now your done!**
+**And now you're done!**
 
 > Simply run the main.py file, and then after run the pythonKeyboardController.py file. Be sure to do it in this order, because the second file controls your keyboard and makes > it difficult to run the main.py file. Now you can leave your computer running with discord open and it will continuously send the messages!
