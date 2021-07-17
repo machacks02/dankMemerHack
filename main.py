@@ -1,19 +1,22 @@
-import discord
+from discord.ext import commands
+import json
 
-client = discord.Client()
+load = json.load(open('config.json'))
+
+client = commands.Bot(command_prefix='!')
+TOKEN = load['TOKEN']
 
 @client.event
 async def on_ready():
-    print('You are logged in as {0.user}'.format(client))
+    print(f'You are logged in as {client.user.name} (ID: {client.user.id})')
 
 @client.event
 async def on_message(message):
     file = open('messages.txt', 'a')
-    file.write(message.author.name + ': ' + message.content + '\n')
-    if message.author.name == 'Dank Memer':
+    file.write(f'{message.author.name}: {message.content}\n')
+
+    if message.author.id == 270904126974590976:
         file2 = open('recent.txt', 'w')
-        file2.write(message.author.name +': ' + message.content)
+        file2.write(f'{message.author.name}: {message.content}\n')
 
-client_secret = 'PUT YOUR CLIENT SECRET HERE'
-
-client.run(client_secret)
+client.run(TOKEN)
