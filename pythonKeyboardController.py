@@ -3,7 +3,7 @@ from discord import utils
 import threading
 import random
 import time
-
+import os
 FLAG = True
 
 counter = 0
