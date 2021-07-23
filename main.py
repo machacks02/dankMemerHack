@@ -1,7 +1,7 @@
 from discord.ext import commands
 import json
-
-load = json.load(open('config.json'))
+import os
+load = json.load(open(os.path.join(os.path.dirname(__file__), 'config.json'),"r"))
 
 client = commands.Bot(command_prefix='!')
 TOKEN = load['TOKEN']
