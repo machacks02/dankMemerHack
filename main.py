@@ -16,7 +16,7 @@ async def on_message(message):
     file.write(f'{message.author.name}: {message.content}\n')
 
     if message.author.id == 270904126974590976:
-        file2 = open('recent.txt', 'w')
+        file2 = open(os.path.join(os.path.dirname(__file__), "recent.txt"), 'w')
         file2.write(f'{message.author.name}: {message.content}\n')
 
 client.run(TOKEN)
