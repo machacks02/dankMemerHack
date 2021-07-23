@@ -36,7 +36,7 @@ def search_loop(counter, first, last):
         send('pls search')
         time.sleep(5)
 
-        file = open('recent.txt', 'r')
+        file = open(os.path.join(os.path.dirname(__file__), 'recent.txt'), 'r')
         message = file.read()
 
         clean_message = utils.remove_markdown(message)
