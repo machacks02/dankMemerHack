@@ -9,7 +9,7 @@ This hacks the dank memes bot on discord! check out my [YouTube channel](https:/
 
 ## Step 2:
 
-- Go to your terminal/command prompt/command line and type in `pip install pynput`. After that, do `pip install pyauogui`.
+- Go to your terminal/command prompt/command line and type in `pip install pynput`. After that, do `pip install pyauogui Pillow`.
 
 **And now you're done!**
 
