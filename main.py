@@ -54,14 +54,21 @@ def search_loop(counter, first, last):
     time.sleep(5)
 
     while FLAG:
-        send('pls search')
+        send('pls scout')
         time.sleep(2)
         findButton()
         time.sleep(random.randint(29, 33))
         send("pls beg")
         time.sleep(1)
         send("pls dep all")
+        
+def crime_loop(counter, first, last):
+    time.sleep(5)
 
+    while FLAG:
+        send('pls crime')
+        time.sleep(2)
+        findButton()
 
 
 threads = [threading.Thread(target=beg_loop), threading.Thread(target=search_loop(counter, first, last))]
