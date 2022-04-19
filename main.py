@@ -2,6 +2,7 @@ from pynput import keyboard
 from pynput.keyboard import Controller as KeyboardController
 from pynput.keyboard import Key
 import pyautogui
+import click
 from discord import utils
 import threading
 import random
@@ -19,6 +20,9 @@ print('-'*33)
 print(f'The time of starting is: {current_time}')
 print('-'*33 + '\n\n')
 
+if click.confirm('Do you want to continue?', default=True):
+    print('Do something')
+    
 def send(message):
     keyboard1 = KeyboardController()
 
