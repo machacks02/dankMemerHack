@@ -19,6 +19,8 @@ print('-'*33)
 print(f'The time of starting is: {current_time}')
 print('-'*33 + '\n\n')
 
+print ('Y/N To start type (y) to stop type (n)')
+
 def send(message):
     keyboard1 = KeyboardController()
 
