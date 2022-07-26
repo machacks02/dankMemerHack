@@ -1,8 +1,6 @@
-from pynput import keyboard
 from pynput.keyboard import Controller as KeyboardController
 from pynput.keyboard import Key
 import pyautogui
-from discord import utils
 import threading
 import random
 import time
@@ -19,6 +17,7 @@ print('-'*33)
 print(f'The time of starting is: {current_time}')
 print('-'*33 + '\n\n')
 
+
 def send(message):
     keyboard1 = KeyboardController()
 
@@ -26,12 +25,14 @@ def send(message):
     keyboard1.press(Key.enter)
     keyboard1.release(Key.enter)
 
+
 def beg_loop():
     while FLAG:
         send('pls beg')
         send('pls dep all')
 
         time.sleep(random.randint(46, 50))
+
 
 def findButton():
     color = (88, 101, 242)
@@ -42,7 +43,7 @@ def findButton():
             if s.getpixel((x, y)) == color:
                 pyautogui.click(x, y)
                 clicked = True
-                break 
+                break
         if clicked == True:
             break
     keyboard2 = KeyboardController()
@@ -63,8 +64,8 @@ def search_loop(counter, first, last):
         send("pls dep all")
 
 
-
-threads = [threading.Thread(target=beg_loop), threading.Thread(target=search_loop(counter, first, last))]
+threads = [threading.Thread(target=beg_loop), threading.Thread(
+    target=search_loop(counter, first, last))]
 
 for thread in threads:
     thread.start()

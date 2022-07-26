@@ -9,8 +9,8 @@ This hacks the dank memes bot on discord! check out my [YouTube channel](https:/
 
 ## Step 2:
 
-- Go to your terminal/command prompt/command line and type in `pip install pynput`. After that, do `pip install pyautogui Pillow`.
+- Go to your terminal/command prompt/command line and type in `pip install pynput pyautogui Pillow`.
 
 **And now you're done!**
 
-> Simply run the main.py file, and switch to a private server. Keep in mind to use a private server, as using a public server could have several serious bugs with the 'pls search' clicker. If thing go wrong and you need to stop the program, go to the window where you are running the program, go to the terminal and `press control+c`. THis should stop the program immediately.
+> Simply run the `main.py` file (double-click it), and switch to a private server. Keep in mind to use a private server, as using a public server could have several serious bugs with the 'pls search' clicker. If thing go wrong and you need to stop the program, close the window where you are running the program. This should stop the program immediately.
